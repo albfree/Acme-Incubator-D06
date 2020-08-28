@@ -966,4 +966,12 @@
 		<property name="user" ref="investor02UserAccount" />
 	</bean>
 	
+	<bean name="creditCard01" class="acme.entities.creditCard.CreditCard">
+		<property name="holderName" value="Antonio"/>
+		<property name="number" value="548965478526547"/>
+		<property name="brand" value="Visa"/>
+		<property name="expirationDate" value="2024/08/15 00:00"/>
+		<property name="CVV" value="852" />
+	</bean>
+	
 </beans>
