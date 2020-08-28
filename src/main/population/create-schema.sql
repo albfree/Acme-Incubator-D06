@@ -59,6 +59,16 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `banner` (
+       `id` integer not null,
+        `version` integer not null,
+        `picture` varchar(255),
+        `slogan` varchar(255),
+        `target_url` varchar(255),
+        `credit_card_id` integer,
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `bookkeeper` (
        `id` integer not null,
         `version` integer not null,
@@ -92,6 +102,17 @@
         `rookie_reward_amount` double precision,
         `rookie_reward_currency` varchar(255),
         `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `credit_card` (
+       `id` integer not null,
+        `version` integer not null,
+        `cvv` varchar(255),
+        `brand` varchar(255),
+        `expiration_date` datetime(6),
+        `holder_name` varchar(255),
+        `number` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -350,6 +371,11 @@
        add constraint FK_h52w0f3wjoi68b63wv9vwon57 
        foreign key (`user_account_id`) 
        references `user_account` (`id`);
+
+    alter table `banner` 
+       add constraint `FKr19baq0bri0akndc7ruwhngy4` 
+       foreign key (`credit_card_id`) 
+       references `credit_card` (`id`);
 
     alter table `bookkeeper` 
        add constraint FK_krvjp9eaqyapewl2igugbo9o8 

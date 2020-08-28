@@ -31,6 +31,10 @@
        drop 
        foreign key FK_h52w0f3wjoi68b63wv9vwon57;
 
+    alter table `banner` 
+       drop 
+       foreign key `FKr19baq0bri0akndc7ruwhngy4`;
+
     alter table `bookkeeper` 
        drop 
        foreign key FK_krvjp9eaqyapewl2igugbo9o8;
@@ -87,11 +91,15 @@
 
     drop table if exists `authenticated`;
 
+    drop table if exists `banner`;
+
     drop table if exists `bookkeeper`;
 
     drop table if exists `bookkeeper_requester`;
 
     drop table if exists `challenge`;
+
+    drop table if exists `credit_card`;
 
     drop table if exists `customization`;
 

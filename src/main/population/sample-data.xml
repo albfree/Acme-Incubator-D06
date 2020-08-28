@@ -958,12 +958,78 @@
 	</bean>
 	
 	<bean name="message01Forum02" class="acme.entities.messages.Message">
-		<property name="title" value="Mensaje 01"/>
-		<property name="creationMoment" value="2020/08/15 22:06"/>
-		<property name="tags" value="tag1, tag2, tag3"/>
-		<property name="body" value="Cuerpo del primer mensaje."/>
+		<property name="title" value="Mensaje 01" />
+		<property name="creationMoment" value="2020/08/15 22:06" />
+		<property name="tags" value="tag1, tag2, tag3" />
+		<property name="body" value="Cuerpo del primer mensaje." />
 		<property name="forum" ref="forum02" />
 		<property name="user" ref="investor02UserAccount" />
 	</bean>
+
+	<!-- Credit card -->
+
+	<bean name="creditCard01" class="acme.entities.creditCard.CreditCard">
+		<property name="holderName" value="Antonio" />
+		<property name="number" value="548965478526547" />
+		<property name="brand" value="Visa" />
+		<property name="expirationDate" value="2024/08/15 00:00" />
+		<property name="CVV" value="852" />
+	</bean>
+
+	<bean name="creditCard02" class="acme.entities.creditCard.CreditCard">
+		<property name="holderName" value="Manuel" />
+		<property name="number" value="379354508162306" />
+		<property name="brand" value="Mastercard" />
+		<property name="expirationDate" value="2019/08/15 00:00" />
+		<property name="CVV" value="666" />
+	</bean>
+
+	<!-- Banners -->
+
+	<bean name="banner01" class="acme.entities.banners.Banner">
+		<property name="picture"
+			value="https://images-ext-2.discordapp.net/external/_ZtmR3WEf7Ugq_fsaQo6zGhra5xdD7aw0otUpKpG5Vs/https/www.antevenio.com/wp-content/uploads/2016/04/Banners-creativos-IBM.jpg" />
+		<property name="slogan" value="Solutions for a small planet" />
+		<property name="targetUrl" value="https://www.ibm.com/es-es" />
+		<property name="creditCard" ref="creditCard01" />
+	</bean>
+
+	<bean name="banner02" class="acme.entities.banners.Banner">
+		<property name="picture" value="https://www.antevenio.com/wp-content/uploads/2016/04/bacardi.png" />
+		<property name="slogan" value="Just add Bacardi" />
+		<property name="targetUrl" value="https://www.bacardi.com/es/es/" />
+		<property name="creditCard" ref="creditCard01" />
+	</bean>
+
+	<bean name="banner03" class="acme.entities.banners.Banner">
+		<property name="picture" value="https://www.antevenio.com/wp-content/uploads/2016/04/Banners-creativos-McDonalds.jpg" />
+		<property name="slogan" value="Lovin´Beats Hatin" />
+		<property name="targetUrl" value="https://m.mcdonalds.es/" />
+		<property name="creditCard" ref="creditCard02" />
+	</bean>
+
+	<bean name="banner04" class="acme.entities.banners.Banner">
+		<property name="picture" value="https://www.antevenio.com/wp-content/uploads/2016/04/lipton.png" />
+		<property name="slogan" value="Wake up and smell the tea" />
+		<property name="targetUrl" value="https://www.lipton.com/es" />
+		<property name="creditCard">
+			<null />
+		</property>
+	</bean>
 	
+	<bean name="banner05" class="acme.entities.banners.Banner">
+		<property name="picture"
+			value="https://lh3.googleusercontent.com/proxy/O0RTVGT50iVFU113_BfbHf6VMNt_aoXTOBHAdgqOs22PUp9GBK_uwmlwECjQ-hgc1Q4P9HAvYYDAUWN8xttQ82zuHKLlret4Mn6PRJ6CHvIdZQy2_ydhQOD97lypmuhm2wewMHszFGgEmRjEDFh-QxX12Co81P1EXm8YBmKbWryZ6H1529EH5os4s2OaCesAy6yLQ3CQDpw831IMRmp37az41w" />
+		<property name="slogan" value="The king of burgers" />
+		<property name="targetUrl" value="https://www.burgerking.es/" />
+		<property name="creditCard" ref="creditCard01" />
+	</bean>
+	
+	<bean name="banner06" class="acme.entities.banners.Banner">
+		<property name="picture" value="https://oniad.com/wp-content/uploads/ejemplo-de-banner-doctor-property.jpg" />
+		<property name="slogan" value="We sell houses" />
+		<property name="targetUrl" value="https://doctorproperty.es/" />
+		<property name="creditCard" ref="creditCard01" />
+	</bean>
+
 </beans>
