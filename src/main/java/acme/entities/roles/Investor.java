@@ -1,5 +1,5 @@
 /*
- * Consumer.java
+ * Investor.java
  *
  * Copyright (c) 2019 Rafael Corchuelo.
  *
