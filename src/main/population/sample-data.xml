@@ -1016,5 +1016,20 @@
 			<null />
 		</property>
 	</bean>
+	
+	<bean name="banner05" class="acme.entities.banners.Banner">
+		<property name="picture"
+			value="https://lh3.googleusercontent.com/proxy/O0RTVGT50iVFU113_BfbHf6VMNt_aoXTOBHAdgqOs22PUp9GBK_uwmlwECjQ-hgc1Q4P9HAvYYDAUWN8xttQ82zuHKLlret4Mn6PRJ6CHvIdZQy2_ydhQOD97lypmuhm2wewMHszFGgEmRjEDFh-QxX12Co81P1EXm8YBmKbWryZ6H1529EH5os4s2OaCesAy6yLQ3CQDpw831IMRmp37az41w" />
+		<property name="slogan" value="The king of burgers" />
+		<property name="targetUrl" value="https://www.burgerking.es/" />
+		<property name="creditCard" ref="creditCard01" />
+	</bean>
+	
+	<bean name="banner06" class="acme.entities.banners.Banner">
+		<property name="picture" value="https://oniad.com/wp-content/uploads/ejemplo-de-banner-doctor-property.jpg" />
+		<property name="slogan" value="We sell houses" />
+		<property name="targetUrl" value="https://doctorproperty.es/" />
+		<property name="creditCard" ref="creditCard01" />
+	</bean>
 
 </beans>
