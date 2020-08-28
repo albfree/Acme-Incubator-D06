@@ -52,7 +52,7 @@ public class TechnologyRecord extends DomainEntity {
 	private String				email;
 
 	@NotBlank
-	@Pattern(regexp = "^(open-source|closed-source)$")
+	@Pattern(regexp = "^(open-source|closed-source)$", message = "record.pattern.indication")
 	private String				indication;
 
 	@Min(-5)

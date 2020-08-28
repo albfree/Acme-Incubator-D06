@@ -31,7 +31,7 @@ public class Application extends DomainEntity {
 
 	@NotBlank
 	@Column(unique = true)
-	@Pattern(regexp = "^[A-Z]{3}[-][0-9]{2}[-][0-9]{6}$")
+	@Pattern(regexp = "^[A-Z]{3}[-][0-9]{2}[-][0-9]{6}$", message = "application.pattern.ticker")
 	private String				ticker;
 
 	@Temporal(TemporalType.TIMESTAMP)
@@ -47,7 +47,7 @@ public class Application extends DomainEntity {
 	private Money				investmentOffer;
 
 	@NotBlank
-	@Pattern(regexp = "^(PENDING|ACCEPTED|REJECTED)$")
+	@Pattern(regexp = "^(PENDING|ACCEPTED|REJECTED)$", message = "application.pattern.status")
 	private String				status;
 
 	@Size(max = 255)

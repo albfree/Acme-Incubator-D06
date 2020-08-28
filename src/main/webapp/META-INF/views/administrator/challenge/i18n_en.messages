@@ -16,6 +16,5 @@ administrator.challenge.list.label.title = Title
 administrator.challenge.list.label.deadline = Deadline
 
 administrator.challenge.error.reward-null = This reward can't be null
-administrator.challenge.error.reward-not-euro = This currency must be euro ("€" or "EUR")
 administrator.challenge.error.null-deadline = Deadline mustn't be null
 administrator.challenge.error.future-dead = Deadline must be at least 1 month in the future

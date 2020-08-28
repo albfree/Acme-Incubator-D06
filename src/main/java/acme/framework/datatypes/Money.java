@@ -37,7 +37,7 @@ public class Money extends DomainDatatype {
 	private Double				amount;
 
 	@NotBlank
-	@Pattern(regexp = "^\\€|(EUR)$")
+	@Pattern(regexp = "^\\€|(EUR)$", message = "money.pattern.currency")
 	private String				currency;
 
 
