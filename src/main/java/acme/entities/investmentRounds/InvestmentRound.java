@@ -38,7 +38,7 @@ public class InvestmentRound extends DomainEntity {
 
 	@NotBlank
 	@Column(unique = true)
-	@Pattern(regexp = "^[A-Z]{3}[-][0-9]{2}[-][0-9]{6}$", message = "investment-round.pattern.ticker")
+	@Pattern(regexp = "^[A-Z]{3}[-][0-9]{2}[-][0-9]{6}$")
 	private String						ticker;
 
 	@Temporal(TemporalType.TIMESTAMP)
@@ -46,7 +46,7 @@ public class InvestmentRound extends DomainEntity {
 	private Date						creationDate;
 
 	@NotBlank
-	@Pattern(regexp = "^(SEED|ANGEL|SERIES-A|SERIES-B|SERIES-C|BRIDGE)$", message = "investment-round.pattern.kind-of-round")
+	@Pattern(regexp = "^(SEED|ANGEL|SERIES-A|SERIES-B|SERIES-C|BRIDGE)$")
 	private String						kindOfRound;
 
 	@NotBlank

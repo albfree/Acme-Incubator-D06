@@ -16,5 +16,6 @@ administrator.challenge.list.label.title = Título
 administrator.challenge.list.label.deadline = Fecha Límite
 
 administrator.challenge.error.reward-null = Esta recompensa no puede ser nula
+administrator.challenge.error.reward-not-euro = Esta moneda debe ser euro ("€" o "EUR")
 administrator.challenge.error.null-deadline = La fecha límite no puede ser nula
 administrator.challenge.error.future-dead = La fecha límite debe estar al menos un mes en el futuro

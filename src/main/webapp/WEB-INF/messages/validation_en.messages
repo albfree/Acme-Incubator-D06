@@ -42,17 +42,7 @@ acme.validation.length = Length must be between {0} and {1}
 acme.validation.range = Must be between {0} and {1}
 acme.validation.script = Script expression "{0}" must return true
 
-money.pattern.currency = Currency must be EUR or €
-
-record.pattern.indication = Valid values ​​for this field are: open-source o closed-source
-
 acme.validation.customization.threshold.max = Must be less than or equal to 100,0
 acme.validation.customization.threshold.invalid = Invalid value
 
 acme.validation.message.confirmation = You must confirm the post
-
-investment-round.pattern.ticker = You must enter a valid ticker. A correct example is: SSS-20-000001, where SSS indicates the first three letters of your sector, 20 the last two digits of the current year and 000001 a number chosen at random
-investment-round.pattern.kind-of-round = It must be one of the following: SEED, ANGEL, SERIES-A, SERIES-B, SERIES-C, BRIDGE
-
-application.pattern.ticker = You must enter a valid ticker. A correct example is: SSS-20-000001, where SSS indicates the first three letters of your sector, 20 the last two digits of the current year and 000001 a number chosen at random
-application.pattern.status = Valid values ​​for this field are: PENDING, ACCEPTED, REJECTED

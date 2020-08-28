@@ -52,7 +52,7 @@ public class ToolRecord extends DomainEntity {
 	private String				email;
 
 	@NotBlank
-	@Pattern(regexp = "^(open-source|closed-source)$", message = "record.pattern.indication")
+	@Pattern(regexp = "^(open-source|closed-source)$")
 	private String				indication;
 
 	@Min(-5)
