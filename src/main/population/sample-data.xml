@@ -1019,8 +1019,8 @@
 	
 	<bean name="banner05" class="acme.entities.banners.Banner">
 		<property name="picture"
-			value="https://lh3.googleusercontent.com/proxy/O0RTVGT50iVFU113_BfbHf6VMNt_aoXTOBHAdgqOs22PUp9GBK_uwmlwECjQ-hgc1Q4P9HAvYYDAUWN8xttQ82zuHKLlret4Mn6PRJ6CHvIdZQy2_ydhQOD97lypmuhm2wewMHszFGgEmRjEDFh-QxX12Co81P1EXm8YBmKbWryZ6H1529EH5os4s2OaCesAy6yLQ3CQDpw831IMRmp37az41w" />
-		<property name="slogan" value="The king of burgers" />
+			value="https://escuelasadministrativas2014dos.files.wordpress.com/2014/08/banner-940x378-a-la-parrilla.png" />
+		<property name="slogan" value="A la parrilla sabe mejor" />
 		<property name="targetUrl" value="https://www.burgerking.es/" />
 		<property name="creditCard" ref="creditCard01" />
 	</bean>
